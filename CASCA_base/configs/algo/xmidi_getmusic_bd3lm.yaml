@@ -1,0 +1,22 @@
+# XMIDI-GetMusic variant of BD3-LM.
+#
+# Identical to xmidi_bd3lm.yaml; both share the BD3-LM forward / loss /
+# sampling code paths. The actual XMIDI-GetMusic-specific behaviour
+# (region masks, row-UNK attention mask, 2D RoPE, source-conditioned
+# sampler) is dispatched on `config.data.train` inside diffusion.py /
+# models/dit.py.
+name: bd3lm
+backbone: dit
+parameterization: subs
+time_conditioning: False
+T: 0
+causal_attention: False
+dropout: 0.0
+ignore_bos: False           # XMIDI-GetMusic has no real BOS; do not protect index 0
+cross_attn: True            # noisy ⊕ clean concatenation (paper Sec. 3.2)
+var_min: True
+clip_search_delta: 0.05
+clip_search_widths: []
+fix_clipping: False
+sampler: semi_ar
+mdlm_loss_scale: False

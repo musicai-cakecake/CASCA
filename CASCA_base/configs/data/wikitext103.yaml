@@ -1,0 +1,6 @@
+train: wikitext103
+valid: wikitext103
+tokenizer_name_or_path: gpt2
+cache_dir: ${oc.env:HF_DATASETS_CACHE,./data_cache}
+wrap: True
+streaming: False

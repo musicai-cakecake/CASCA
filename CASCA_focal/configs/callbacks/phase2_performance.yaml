@@ -1,0 +1,3 @@
+phase2_performance:
+  _target_: xmidi_getmusic.phase2_performance.Phase2PerformanceCallback
+  output_dir: ${checkpointing.save_dir}/phase2_telemetry

@@ -1,0 +1,24 @@
+# XMIDI dataset config for BD3-LM training.
+# See R&D_Requirements.md and xmidi/dataset.py for details.
+
+# Used by main.py and dataloader.py to dispatch to the XMIDI loader.
+train: xmidi
+valid: xmidi
+tokenizer_name_or_path: xmidi          # triggers XMIDITokenizer in get_tokenizer()
+
+# Absolute path to the XMIDI_Dataset_full_output directory.
+cache_dir: ${oc.env:XMIDI_DATA_ROOT}
+
+# Path to texture_dictionary.txt, used by XMIDITokenizer to populate vocab.
+dict_path: ${.cache_dir}/texture_dictionary.txt
+
+# "idx" (recommended; reads .data/.idx/_length.npy) or "jsonl"
+data_format: idx
+
+# These flags exist in other data configs; XMIDI does not wrap with BOS/EOS.
+wrap: False
+streaming: False
+insert_train_eos: False
+insert_valid_eos: False
+insert_train_special: False
+insert_valid_special: False

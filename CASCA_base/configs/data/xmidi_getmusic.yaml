@@ -1,0 +1,16 @@
+# BD3LMs-Music-V2 dataset: 16x512 grids and 142,419 dictionary entries.
+train: xmidi_getmusic
+valid: xmidi_getmusic
+tokenizer_name_or_path: xmidi_getmusic
+
+# Set BD3LM_DATA_ROOT to the external preprocessed dataset directory.
+cache_dir: ${oc.env:BD3LM_DATA_ROOT}
+dict_path: ${.cache_dir}/whole_dict.txt
+data_format: idx
+
+wrap: False
+streaming: False
+insert_train_eos: False
+insert_valid_eos: False
+insert_train_special: False
+insert_valid_special: False

@@ -1,0 +1,16 @@
+# DiT backbone for XMIDI sequences.
+# Same capacity as the BD3-LM "small" config (~110M params), but with:
+#   - length=5120  (= 10 rows * 512 cols, row-major flattened)
+#   - attn_backend=sdpa  by default (flash_attn doesn't support custom masks)
+name: xmidi_small
+type: ddit
+hidden_size: 768
+cond_dim: 128
+length: 5120
+n_blocks: 12
+n_heads: 12
+scale_by_sigma: True
+dropout: 0.1
+tie_word_embeddings: True
+adaln: False
+attn_backend: sdpa

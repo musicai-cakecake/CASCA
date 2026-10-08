@@ -1,0 +1,19 @@
+# BD3LMs-Music-V2 dataset: 16x512 grids and 142,419 dictionary entries.
+train: xmidi_getmusic
+valid: xmidi_getmusic
+tokenizer_name_or_path: xmidi_getmusic
+
+# setup_env.sh defines BD3LM_DATA_ROOT explicitly. No fallback to the original
+# V2 project is allowed: unresolved runtime identity must fail instead of
+# silently reading or writing outside this project.
+cache_dir: ${oc.env:BD3LM_DATA_ROOT}
+
+dict_path: ${.cache_dir}/whole_dict.txt
+data_format: idx
+
+wrap: False
+streaming: False
+insert_train_eos: False
+insert_valid_eos: False
+insert_train_special: False
+insert_valid_special: False

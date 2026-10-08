@@ -1,0 +1,14 @@
+# Larger BD3LMs-Music-V2 DiT backbone.
+name: xmidi_getmusic_medium
+type: ddit
+hidden_size: 1024
+cond_dim: 128
+length: 8192
+n_blocks: 16
+n_heads: 16
+scale_by_sigma: True
+dropout: 0.1
+tie_word_embeddings: True
+output_chunk_size: 16
+adaln: False
+attn_backend: flex
