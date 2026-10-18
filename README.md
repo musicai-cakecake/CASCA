@@ -4,7 +4,7 @@
 <img src="assets/qq_studio.png" alt="CUC, Peking University, Tencent." width="400" />
 </p>
 
-<h1 align="center">CASCA: Learning Cross-Axis Dependency and Sparsity Calibration<br>with Discrete Diffusion for Unified Symbolic Music Generation</h1>
+<h2 align="center">CASCA: Learning Cross-Axis Dependency and Sparsity Calibration<br>with Discrete Diffusion for Unified Symbolic Music Generation</h2>
 
 <p align="center"><strong>An end-to-end unified base model for the intelligent creation platform.</strong></p>
 
