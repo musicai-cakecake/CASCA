@@ -6,7 +6,8 @@
 
 <p align="center"><strong>An end-to-end unified base model for intelligent creation platforms.</strong></p>
 
-
+---
+## Introduction
 CASCA is a unified base model for intelligent creation platforms. It generates multi-instrument accompaniment or target instrument tracks conditioned on input tracks and prompts.
 Its data representation is compatible with intelligent creation platforms and digital audio workstations (DAWs) for human–AI collaborative creation scenarios.
 
@@ -31,3 +32,6 @@ Leveraging these capabilities, CASCA can be deployed for assisted music creation
 <p align="center">
 <img src="assets/application_diagram.png" alt="Schematic diagram of applications" width="420" />
 </p>
+
+---
+
