@@ -33,5 +33,18 @@ Leveraging these capabilities, CASCA can be deployed for assisted music creation
 <img src="assets/application_diagram.png" alt="Schematic diagram of applications" width="420" />
 </p>
 
----
+Main contributions and innovations:
 
+- A unified perspective on symbolic music generation highlights two complementary requirements: cross-axis dependency learning for cross-track coordination and temporal continuity, and sparsity calibration to counter the over-generation of empty-time states observed in discrete diffusion under extreme data imbalance.
+
+- A block discrete diffusion framework, CASCA, integrates a unified 2D representation, row-adaptive attention, factorized 2D rotary position embeddings, and region-aware masking for multi-instrument generation and editing.
+
+- A sparsity-calibrated loss, PFSUBS, with confidence-aware gradient calibration, controls the proportions of empty-time and music-event tokens toward a prescribed target distribution. It reverses the generation bias toward empty time and increases musical richness while preserving full-vocabulary reconstruction.
+
+- A large-scale multi-instrument corpus, together with parallel training and cached inference, supports large-vocabulary modeling. A comprehensive experimental toolkit is constructed for evaluating generation quality, conditional preservation, and sparsity calibration.
+
+---
+## Resource
+The two versions mentioned in the paper are both available in this repository.
+CASCA is trained from random initialization with the original SUBS objective.
+CASCA-PFSUBS receives 225 post-training updates with the proposed Padding-Aware Focal Substitution-Based (PFSUBS) loss.
