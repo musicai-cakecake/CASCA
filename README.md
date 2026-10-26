@@ -49,8 +49,7 @@ The two versions mentioned in the paper are both available in this repository.
 CASCA is trained from random initialization with the original SUBS objective.
 CASCA-PFSUBS receives 225 post-training updates with the proposed Padding-Aware Focal Substitution-Based (PFSUBS) loss.
 
-Download model ckpt of CASCA.  
-https://drive.google.com/file/d/1ScDReYZc6MeCbLMJ0pSaWb91qvZP9UvQ/view?usp=sharing
+The model ckpt for CASCA can be obtained from the following link:   [google drive](https://drive.google.com/file/d/1ScDReYZc6MeCbLMJ0pSaWb91qvZP9UvQ/view?usp=sharing).
 
-Download processed dataset of XMIDI.  
-https://drive.google.com/file/d/1-HKIbJX8T_XbMBMdtkfjx8JVcisfBTO6/view?usp=sharing
+The processed representation can be downloaded via [google drive](https://drive.google.com/file/d/1-HKIbJX8T_XbMBMdtkfjx8JVcisfBTO6/view?usp=sharing).  
+It is processed on the XMIDI dataset. The original XMIDI is accessible via [google drive](https://drive.google.com/file/d/1qDkSH31x7jN8X-2RyzB9wuxGji4QxYyA/view?usp=sharing).
