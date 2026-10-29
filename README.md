@@ -44,6 +44,20 @@ Main contributions and innovations:
 - A large-scale multi-instrument corpus, together with parallel training and cached inference, supports large-vocabulary modeling. A comprehensive experimental toolkit is constructed for evaluating generation quality, conditional preservation, and sparsity calibration.
 
 ---
+## Demo
+Several generated samples along with their corresponding ground truth (GT) are available in the Demos folder.  
+We do not provide audio rendering, as our model only outputs symbolic scores. 
+This work focuses on human–AI interactive composition of score content; audio quality is outside the scope of our research. The final quality of released music heavily depends on timbre, mixing, and post-production. Audio exported using default DAW sound libraries tends to have poor musical expressiveness, which can be mistakenly attributed to defects in the generated score.
+
+An example generation is shown below. The first track is the input melody named lead, while the remaining tracks constitute the generated accompaniment. For this sample, all six supported instrument types of our model are specified for generation.
+The input prompt is: Allegro angry jazz lead piano guitar bass string wind drum.
+<p align="center"> <img src="Demos/592/592_gen.png" alt="Schematic diagram of applications" width="1200" /> </p>
+The corresponding GT of this sample is provided below:
+<p align="center"> <img src="Demos/592/592_GT.png" alt="Schematic diagram of applications" width="1200" /> </p>
+
+The source file of this sample is located at: Demos/592
+
+---
 ## Resource
 The two versions mentioned in the paper are both available in this repository.
 CASCA is trained from random initialization with the original SUBS objective.
